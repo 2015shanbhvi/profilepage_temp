@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright (c) 2016 VMware, Inc. All Rights Reserved.
+  ~ This software is released under MIT license.
+  ~ The full license information can be found in LICENSE in the root directory of this project.
+  -->
+
+
+<html>
+
+<head>
+    <p>This is a Clarity seed application. This is the default page that loads for the application.</p>
+
+    <clr-dropdown [clrMenuPosition]="'bottom-right'">
+        <button class="btn btn-outline-primary" clrDropdownToggle>
+            Dropdown
+            <clr-icon shape="caret down"></clr-icon>
+        </button>
+        <div class="dropdown-menu">
+            <label class="dropdown-header">Dropdown header</label>
+            <a href="javascript://" clrDropdownItem>Action 1</a>
+            <a href="javascript://" clrDropdownItem>Action 2</a>
+            <a href="javascript://" class="disabled" clrDropdownItem>Disabled</a>
+            <div class="dropdown-divider"></div>
+            <a href="javascript://" clrDropdownItem>Link 1</a>
+            <a href="javascript://" clrDropdownItem>Link 2</a>
+        </div>
+    </clr-dropdown>
+</head>
+<body>
+<!--Trying out javascript -->
+<script src= "edit.js"></script>
+<script>
+function highlight(){
+    var element = document.getElementById('content');
+    element.style.color = "#ff3300";
+}
+</script>
+
+
+<!-- ==================== -->
+  <form>
+    <section class="form-block">
+        <div class = "center-text">
+          <label><h1>Profile</h1></label>
+        </div>
+        <hr/> <!-- horizontal line -->
+        <div class = "bottom-spacing"> <!-- To give extra spacing between title and content-->
+        </div>
+
+          <div class="row center-div">
+
+                  <div class="card">
+                      <div class="card-header">
+                          <h1>Vinay Shanbhag</h1>
+                      </div>
+                      <div class="card-block">
+                          <div class="card-title">
+                              Client
+                          </div>
+                          <div class="card-text">
+                            <label for="name">Username:</label>
+                                        <input type="text" id="name" name="name" placeholder="How to make an editable profile page" />
+                                        <br/>
+                          </div>
+                          <div class="card-text">
+
+                              <label for="name">Email:</label>
+                                          <input type="text" id="name" name="name" placeholder="How to make an editable profile page" />
+                                          <br/>
+                          </div>
+                      </div>
+                      <div class="card-footer">
+                          <button class="btn btn-sm btn-link">Edit</button>
+                      </div>
+                  </div>
+          </div>
+      </section>
+    </form>
+
+
+</body>
+
+
+</html>
